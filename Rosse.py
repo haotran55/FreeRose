@@ -165,6 +165,5 @@ def check_filter(message):
 def start(message):
     bot.send_message(message.chat.id, "Bot quản lý nhóm Rose đã sẵn sàng!")
 
-if __name__ == "__main__":
-    print("Bot đang chạy...")
-    bot.polling()
+print("Bot đang chạy...")
+bot.infinity_polling()
