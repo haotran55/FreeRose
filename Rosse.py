@@ -6,7 +6,6 @@ from keep_alive import keep_alive
 keep_alive()
 TOKEN = os.environ.get("BOT_TOKEN")
 bot = telebot.TeleBot(TOKEN)
-print(os.environ.get('TOKEN')) 
 warnings = {}  # user warnings
 filters = {}   # filtered keywords
 welcomes = {}  # welcome messages
@@ -168,7 +167,6 @@ def check_filter(message):
 def start(message):
     bot.send_message(message.chat.id, "Bot quản lý nhóm Rose đã sẵn sàng!")
 
-# Start polling
 if __name__ == "__main__":
-    bot_active = True
-    bot.polling()  #
+    print("Bot đang chạy...")
+    bot.polling()
