@@ -6,9 +6,10 @@ app = FastAPI()
 
 # Danh sách URL ảnh sẵn có
 images = [
-    "https://i.imgur.com/x1.jpg",
-    "https://i.imgur.com/x2.jpg",
-    "https://i.imgur.com/x3.jpg"
+    "https://i.pinimg.com/736x/65/39/30/6539305fb14952972dabefd10d4402b3.jpg",
+    "https://anhnail.com/wp-content/uploads/2024/10/Hinh-gai-xinh-k8-cute.jpg",
+    "https://1nedrop.com/wp-content/uploads/2024/10/gai-xinh-trung-quoc-57fKByew.jpg"
+    "https://tophinhanh.net/wp-content/uploads/2023/12/Hinh-anh-gai-xinh-k8-1.jpg"
 ]
 
 @app.get("/")
