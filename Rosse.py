@@ -4,7 +4,7 @@ import json
 import os
 from keep_alive import keep_alive
 keep_alive()
-TOKEN = 'BOT_TOKEN'
+TOKEN = os.environ.get("BOT_TOKEN")
 bot = telebot.TeleBot(TOKEN)
 print(os.environ.get('TOKEN')) 
 warnings = {}  # user warnings
