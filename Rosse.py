@@ -4,9 +4,9 @@ import json
 import os
 from keep_alive import keep_alive
 keep_alive()
-TOKEN = '7515797996:AAGTf3lO6C7wf1TLeuGf2UpS3IlyH3dupNg'
+TOKEN = 'BOT_TOKEN'
 bot = telebot.TeleBot(TOKEN)
-
+print(os.environ.get('TOKEN')) 
 warnings = {}  # user warnings
 filters = {}   # filtered keywords
 welcomes = {}  # welcome messages
