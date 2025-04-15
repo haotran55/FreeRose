@@ -2,8 +2,6 @@ import telebot
 from telebot import types
 import json
 import os
-from keep_alive import keep_alive
-keep_alive()
 TOKEN = os.environ.get("BOT_TOKEN")
 bot = telebot.TeleBot(TOKEN)
 warnings = {}  # user warnings
